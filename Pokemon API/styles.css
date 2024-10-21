@@ -1,0 +1,134 @@
+html{
+  background: linear-gradient(to bottom, yellow, orangered); 
+}
+#root{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Style Inputan */
+#pokemonName {
+  background: orangered;
+  border-radius: 5px;
+  border: 2px solid orange;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: white;
+  outline: none;
+}
+
+/* Efek hover pada input */
+#pokemonName:hover {
+  background: darkorange;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk tombol */
+button {
+  background: oldlace;
+  border-radius: 5px;
+  border: 2px solid #b8860b;
+  padding: 6px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+  background: lightgoldenrodyellow;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek saat tombol diklik */
+button:active {
+  background: goldenrod;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style Kartu */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 15px; /* Membuat sudut lebih bulat */
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  width: 200px;
+  transition: transform 0.3s; /* Animasi hover */
+  background: linear-gradient(to bottom, orange, white); /* Gradien latar belakang */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Kartu membesar saat di-hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+img {
+  height: 120px;
+  width: 180px;
+  margin: 10px auto;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-family: 'Segoe UI', sans-serif;
+  align-self: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #333;
+  font-size: 22px;
+}
+
+h3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+h3 span {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.attack {
+  color: red;
+}
+
+.defense {
+  color: blue;
+}
+
+.health {
+  color: green;
+}
+
+p {
+  background: yellow;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  overflow: hidden;
+}
